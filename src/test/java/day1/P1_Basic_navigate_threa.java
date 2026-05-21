@@ -9,6 +9,12 @@ public class P1_Basic_navigate_threa {
 	WebDriver driver = new ChromeDriver();
 	driver.get("https://www.engineerdiaries.com/selenium");
 	Thread.sleep(2000);
+	driver.manage().window().maximize();
+	
+	driver.navigate().to("https://www.engineerdiaries.com/ui-framework");
+	driver.navigate().back();
+	driver.navigate().refresh();
+	
 	
 	}	
 }
